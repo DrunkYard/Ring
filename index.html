@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Оценка</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1">
+
+    <link rel="stylesheet" href="src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/css/bootstrap-theme.css">
+
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <style>
+        .btn{
+            width: 100%;
+        }
+        body {
+            background: #a8b5c7 url(img/ground.jpg) repeat-y; /* Цвет фона и путь к файлу */
+            background-attachment: fixed;
+            color: #fff; /* Цвет текста */
+            -moz-background-size: 100%; /* Firefox 3.6+ */
+            -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+            -o-background-size: 100%; /* Opera 9.6+ */
+            background-size: 100%; /* Современные браузеры */
+        }
+        #logo {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row" align="center">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <a href="#"><img src="img/logo.png" alt="" class="img-rounded"
+                                 id="logo"></a>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 dropdown">
+                <h3><span class="label label-warning">Магазин</span></h3>
+                <select class="form-control" id="point"></select>
+            </div>
+            <!--<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>-->
+        </div>
+        <div class="row">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 dropdown">
+                <h3><span class="label label-warning">Пользователь</span></h3>
+                <select class="form-control" id="users"></select>
+            </div>
+            <!--<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>-->
+        </div>
+        <!--<br>-->
+        <div class="row">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 input-group">
+                <h3><span class="label label-warning">Пароль</span></h3>
+                <input type="password" class="form-control"
+                       id="pass"
+                       placeholder="Пароль"
+                       aria-describedby="basic-addon1">
+            </div>
+            <!--<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>-->
+        </div>
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 dropdown">
+                <h4><span class="label label-danger" id="msg"></span></h4>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <button type="button" class="btn btn-success btn-lg" onclick="enter(this)">Вход</button>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+        </div>
+    </div>
+    <script src="src/js/jquery-3.3.1.min.js"></script>
+    <script src="src/js/bootstrap.min.js"></script>
+    <script src="scripts/auth.js"></script>
+</body>
+</html>
